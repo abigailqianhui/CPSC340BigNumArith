@@ -31,6 +31,8 @@ public class BigNumArithmetic {
         // add Linked List int result to the Stack
         // continue to iterate through the file
 
-        // if the Stack is null, return not a valid equation
+        // if the Stack is Empty or does not contain enough LinkedList of ints when trying to perform an operation
+        // or is left with more than one LinkedList of ints with no more operands
+        // return not a valid equation
     }
 }
