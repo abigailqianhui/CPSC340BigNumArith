@@ -1,10 +1,27 @@
 public class BigNumArithmetic {
+    // constructor
     public BigNumArithmetic() {
 
     }
 
+    // adds two Linked List integer values
+    public void addition() {
+
+    }
+
+    // multiplies two Linked List integer values
+    public void multiplication() {
+
+    }
+
+    // exponentiation on two Linked List integer values
+    public void exponentiation() {
+
+    }
+
+    // main method
     public static void main(String args[]) {
-        // initate File reader
+        // initiate File reader
         // iterate through the File while(file.hasNext())
         // read in value from first line
         // add ints to Linked List
