@@ -1,5 +1,4 @@
 // Linked stack implementation
-// changed all Objects on the LStack into LLists on the LStack so it can be more easily accessed and used
 class LStack implements Stack {
     private Link top;               // Pointer to first element
     private int size;               // Number of elements
@@ -12,22 +11,22 @@ class LStack implements Stack {
     public void clear() { top = null; size = 0; }
 
     // Put "it" on stack
-    public boolean push(LList it) {
+    public boolean push(Object it) {
         top = new Link(it, top);
         size++;
         return true;
     }
 
     // Remove "it" from stack
-    public LList pop() {
+    public Object pop() {
         if (top == null) return null;
-        LList it = top.element();
+        Object it = top.element();
         top = top.next();
         size--;
         return it;
     }
 
-    public LList topValue() {      // Return top value
+    public Object topValue() {      // Return top value
         if (top == null) return null;
         return top.element();
     }
