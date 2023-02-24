@@ -1,4 +1,5 @@
 public class BigNumArithmetic {
+
     // constructor
     public BigNumArithmetic() {
 
@@ -21,6 +22,7 @@ public class BigNumArithmetic {
 
     // main method
     public static void main(String args[]) {
+
         // initiate File reader
         // iterate through the File while(file.hasNext())
         // read in value from first line
