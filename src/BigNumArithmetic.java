@@ -10,18 +10,35 @@ public class BigNumArithmetic {
     }
 
     // adds two Linked List integer values
-    public LList addition(LList num1, LList num2) {
-
-    }
+    public LList addition(Object num1, Object num2) {
+        int numList1 = Integer.valueOf((String) num1);
+        int numList2 = Integer.valueOf((String) num2);
+        Object sum = 0;
+        LList finalSum = new LList();
+        //if num equals > 9 or <= 18, num - 10;
+        if (numList1 >= 9 || numList1 <= 18) {
+            numList1 = numList1 - 10;
+            if (numList2 >= 9 || numList2 <= 18) { //if num2 equals > 9 or <= 18, num - 10;
+            numList2 = numList2 - 10;
+            sum = numList1 + numList2;
+            } else {
+                sum = numList1 + numList2;
+            }
+        }else{
+            sum = numList1 + numList2;
+        }
+            finalSum.insert(sum);
+            return finalSum;
+}
 
     // multiplies two Linked List integer values
-    public LList multiplication() {
-
+    public LList multiplication(Object num1, Object num2) {
+        return null;
     }
 
     // exponentiation on two Linked List integer values
-    public LList exponentiation() {
-
+    public LList exponentiation(Object num1, Object num2) {
+        return null;
     }
 
     // main method
